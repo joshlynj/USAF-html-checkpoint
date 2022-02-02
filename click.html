@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GMDB</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+
+  <header>
+    <div class="menu">
+      <a class="active" href="#gmdb">GMDB</a>
+      <a href="#home">Home</a>
+      <a href="#login">Login</a>
+      <a href="index.html">Go back to main page</a>
+      <input id="searchbar" onkeyup="search_movie()" type="text"
+      name="search" placeholder="Search movie..">
+    </div> 
+  </header>
+
+  <div class="moviePage">
+    <h3>Click</h3>
+    <p>Released in the 2000s</p>
+    <p> Adam Sandler's big break</p>
+
+    <figure>
+        <img src="https://i.ytimg.com/vi/Rz6jHTpi6zw/maxresdefault.jpg" alt="Click Movie Poster">
+        <figcaption>Adam Sandler finds a magical remote that controls time</figcaption>
+    </figure>
+  </div>
+
+  <section id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div>>
+          </div>
+          </div>
+      <div class="row">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+
+<script>
+    $(document).ready(function(){ 
+        $(".primaryContained").on('click', function(){
+            $(".comment").addClass("commentClicked");
+        });
+    $("textarea").on('keyup.enter', function(){
+        $(".comment").addClass("commentClicked");
+        });
+    });
+
+    new Vue({
+        el: "#app",
+        data:{
+            title: 'Add a comment',
+            newItem: '',
+            item: [],
+    },
+        methods:{
+            addItem  (){
+                this.item.push(this.newItem);
+                this.newItem = "";
+            }
+        }
+    });
+</script>
+</html>

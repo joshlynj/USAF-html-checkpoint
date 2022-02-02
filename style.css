@@ -1,0 +1,153 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+  
+ 
+  .menu a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  .menu a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .menu input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+/**/
+
+
+  body  
+  {  
+      margin: 0;  
+      padding: 0;  
+      background-color:grey;  
+      font-family: 'Arial';  
+  }  
+  .login{  
+          width: 382px;  
+          overflow: hidden;  
+          margin: auto;  
+          margin: 20 0 0 450px;  
+          padding: 80px;  
+          background: white;  
+          border-radius: 15px ;  
+            
+  }  
+  h2{  
+      text-align: center;  
+      color: black;  
+      padding: 20px;  
+  }  
+  label{  
+      color: black;  
+      font-size: 17px;  
+  }  
+  #Uname{  
+      width: 300px;  
+      height: 30px;  
+      border: none;  
+      border-radius: 3px;  
+      padding-left: 8px;  
+  }  
+  #Pass{  
+      width: 300px;  
+      height: 30px;  
+      border: none;  
+      border-radius: 3px;  
+      padding-left: 8px;  
+        
+  }  
+  #log{  
+      width: 300px;  
+      height: 30px;  
+      border: none;  
+      border-radius: 17px;  
+      padding-left: 7px;  
+      color: black;  
+
+  }  
+  span{  
+      color: white;  
+      font-size: 17px;  
+  }  
+  a{  
+      float: right;  
+      background-color: grey;  
+  }  
+
+  #menu{
+    display: inline-block;
+    margin-left:15%;
+  }
+
+  .moviePage{
+    width: 1200px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    background: white;  
+    border-radius: 15px ; 
+  }
+
+  .container {
+	max-width: 640px;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.comment {
+	display: block;
+	transition: all 1s;
+}
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+
+.list{
+    width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 10px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #016BA8;
+	transition: all 0.5s;
+	margin-top: 15px;
+}
+.container textarea {
+	width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 10px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #016BA8;
+	transition: all 0.5s;
+	margin-top: 15px;
+}
