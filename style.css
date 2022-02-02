@@ -1,15 +1,15 @@
 *{
     font-family: sans-serif;
     margin: 0;
-    
-  }
-  .topnav {
+
+}
+.topnav {
     overflow: hidden;
     background-color: #313336;
-  }
-  
- 
-  .menu a {
+}
+
+
+.menu a {
     float: left;
     display: block;
     color: white;
@@ -18,93 +18,99 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
+}
 
-  .menu a.active {
+
+.menu a.active {
     background-color: #313336;
     color: white;
-  }
-  
-  .menu input[type=text] {
+}
+
+.menu input[type=text] {
     float: right;
     padding: 6px;
     border: none;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-  }
-  
+}
+
 /**/
 header{
     background-color:  #313336
 }
 
-  body  
-  {  
-      margin: 0;  
-      padding: 0;  
-      background-color:white;  
-      font-family: 'Arial';  
-  }  
-  .login{  
-          width: 382px;  
-          overflow: hidden;  
-          margin: auto;  
-          margin: 20 0 0 450px;  
-          padding: 80px;  
-          background: white;  
-          border-radius: 15px ;  
-            
-  }  
-  h2{  
-      text-align: center;  
-      color: black;  
-      padding: 20px;  
-  }  
-  label{  
-      color: black;  
-      font-size: 17px;  
-  }  
-  #Uname{  
-      width: 300px;  
-      height: 30px;  
-      border: none;  
-      border-radius: 3px;  
-      padding-left: 8px;  
-  }  
-  #Pass{  
-      width: 300px;  
-      height: 30px;  
-      border: none;  
-      border-radius: 3px;  
-      padding-left: 8px;  
-        
-  }  
-  #log{  
-      width: 300px;  
-      height: 30px;  
-      border: none;  
-      border-radius: 17px;  
-      padding-left: 7px;  
-      color: black;  
+body{  
+    margin: 0;  
+    padding: 0;  
+    background-color:white;  
+    font-family: 'Arial';  
+}  
 
-  }  
-  span{  
-      color: white;  
-      font-size: 17px;  
-  }  
-  a{  
-      float: right;  
-      background-color: grey;  
-  }  
+.login{  
+    width: 382px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    background: white;  
+    border-radius: 15px ;  
+    
+}  
+#login-form-submit{
+   background: #3694ca;
+   color:white; 
+}
 
-  #menu{
+
+h2{  
+    text-align: center;  
+    color: black;  
+    padding: 20px;  
+}  
+label{  
+    color: black;  
+    font-size: 17px;  
+}  
+#E-mail{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: black;  
+
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: grey;  
+}  
+
+#menu{
     display: inline-block;
     margin-left:15%;
-  }
+}
 
-  .moviePage{
+.moviePage{
     width: 1200px;  
     overflow: hidden;  
     margin: auto;  
@@ -112,14 +118,14 @@ header{
     padding: 80px;  
     background: white;  
     border-radius: 15px ; 
-  }
+}
 
-  .container {
-	max-width: 640px;
-	margin: 30px auto;
-	background: #fff;
-	border-radius: 8px;
-	padding: 20px;
+.container {
+    max-width: 640px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .comment {
@@ -135,14 +141,23 @@ header{
 
 .list{
     list-style-type: none;
-    width: 1200px;  
+    width: 800px;  
     overflow: hidden;  
     margin: auto;  
-    margin: 20 0 0 450px;  
-    padding: 80px;  
+    padding: 300px;  
     background: white;  
-    border-radius: 15px ; 
+    border-radius: 200px ; 
 }
+
+.movies{
+    width: 650px;  
+    overflow: hidden;  
+    margin: auto;  
+    padding: 10px;  
+    background: white;  
+    border-radius: 50px ; 
+}
+
 .container textarea {
 	width: 100%;
 	border: none;

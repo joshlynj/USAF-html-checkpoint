@@ -7,40 +7,43 @@
   </head>
   <body>
     <header>
-        <div class="menu">
+        <nav class="menu">
             <a class="active" href="#gmdb">GMDB</a>
             <a href="home.html">Home</a>
             <a href="#login">Login</a>
             <input id="searchbar" onkeyup="search_movie()" type="text"
             name="search" placeholder="Search movie..">
-        </div>
-        
+        </nav>
     </header>
+
     <h2>Login Page</h2><br>    
     <div class="login">    
     <form id="login" method="get" action="login.php">    
         <label><b>E-mail    
         </b>    
         </label>    
-        <input type="text" name="E-mail" id="E-mail" placeholder="Type your E-mail...">    
+        <input type="text" name="E-mail" id="e-mail" placeholder="Type your E-mail...">    
         <br><br>    
         <label><b>Password     
         </b>    
         </label>    
-        <input type="Password" name="Pass" id="Pass" placeholder="Type your password...">    
+        <input type="Password" name="Pass" id="pass" placeholder="Type your password...">    
         <br><br>    
-        <input type="button" name="log" id="log" value="Log In Here">       
+        <input type="submit" value="Login" id="login-form-submit">     
         <br><br>    
     </form> 
 
 
-   
-
-
-
-
-
 
 </body>
+<script>
+    const loginForm = document.getElementById("login");
+    const loginButton = document.getElementById("login-form-submit");
+
+    loginButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        const username = login.e-mail.value;
+        const password = login.pass.value;
+    })
 </script>
 </html>
